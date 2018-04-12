@@ -56,4 +56,5 @@ async def list_servers():
 
 
 client.loop.create_task(list_servers())
-client.run(NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo)
+client.run('NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo')
+bot.run('NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo')
