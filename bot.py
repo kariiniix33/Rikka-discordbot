@@ -4,7 +4,7 @@ import requests
 from discord import Game
 from discord.ext.commands import Bot
 
-BOT_PREFIX = ("%", "!")
+BOT_PREFIX = ("?", "!")
 TOKEN = "NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo"  # Get at discordapp.com/developers/applications/me
 
 client = Bot(command_prefix=BOT_PREFIX)
@@ -21,7 +21,6 @@ async def eight_ball(context):
         'Too hard to tell',
         'It is quite possible',
         'Definitely',
-        'Sure',
     ]
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
@@ -56,5 +55,4 @@ async def list_servers():
 
 
 client.loop.create_task(list_servers())
-client.run('NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo')
-bot.run('NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo')
+client.run(NDMzNzI0NTU0ODU5MjQ5NjY1.DbD3ww.9utP_LCptN498b_P394MUtQfzVo)
